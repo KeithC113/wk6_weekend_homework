@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Who's played 007 App</title>
+    <script src = "js/app.js"> </script>
+    <<link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <h1> James Bond Actors </h1>
+      <h2> App Instructions </h2>
+        <p> To create a database of those actors who have played Ian Fleming's James Bond, 007....type in...</p>
+        <form id="new-item-form">
+          <div id="form-wrapper">
+            <div class="form-item">
+              <label for="name" class="primary">1. The actors' name > </label>
+              <input type="text" id="name" required/>
+            </div>
+              <p></p>
+              <p></p>
+                <div class="form-item">
+                  <label for="film" class="primary">2. Select the film they starred in > </label>
+                  <select id="film">
+                    <option value="" disabled selected></option>
+                    <option value="film">Dr No.</option>
+                    <option value="film">Goldfinger</option>
+                    <option value="film">OHMSS</option>
+                    <option value="film">Die Another Day</option>
+                    <option value="film">Tomorrow Never Dies</option>
+                    <option value="film">Skyfall</option>
+                    <option value="film">Spectre</option>
+                  </select>
+                </div>
+              <p></p>
+              <p></p>
+                <div class="form-item">
+                  <label for="year" class="primary">3. The year of release > </label>
+                  <input type="text" id="year" required/>
+                </div>
+              <p>4. Click SUBMIT </p>
+            <input type = "submit" value "Save"/>
+        </form>
+    <h3>Database of 007 actors</h3>
+    <ul id = "actor list"></ul>
+  </body>
+</html>
