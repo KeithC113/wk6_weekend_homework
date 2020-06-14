@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <title> 007 Dossier </title>
     <script src = "js/app.js"> </script>
-    <<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <h1> James Bond Dossier </h1>
-      <h2> App Instructions </h2>
-        <p> To create a database of those actors who have played Ian Fleming's James Bond, 007....</p>
+    <h1 class = "h1-front-page"> James Bond Dossier </h1>
+      <h2 class = "h2-front-page"> App Instructions </h2>
+        <p class = "p-front-page"> To create a database of actors who have played Ian Fleming's James Bond, 007....</p>
+        <span>
+        </span>
         <form id="new-item-form">
           <div id="form-wrapper">
             <div class="form-item">
-              <label for="name" class="primary">1. Choose an actor> </label>
+              <label for="name" class="primary"> Choose an actor </label>
               <select id="name">
                 <option value="" disabled selected></option>
                 <option value="Sean Connery">Sean Connery</option>
@@ -27,7 +29,7 @@
               <p></p>
               <p></p>
                 <div class="form-item">
-                  <label for="film" class="primary">2. The film they starred in > </label>
+                  <label for="film" class="primary">The film they starred in </label>
                   <select id="film">
                     <option value="" disabled selected></option>
                     <option value="Dr No.">Dr No.</option>
@@ -59,13 +61,13 @@
               <p></p>
               <p></p>
                 <div class="form-item">
-                  <label for="villan" class="primary">3. The Villan > </label>
+                  <label for="villan" class="primary">The Villan </label>
                   <select id="villan">
                     <option value="" disabled selected></option>
                     <option value="Dr No.">Dr No.</option>
                     <option value="Rosa Klebb">Rosa Klebb</option>
                     <option value="Auric Goldfinger">Auric Goldfinger</option>
-                    <option value="Emilio Largo">EMilio Largo</option>
+                    <option value="Emilio Largo">Emilio Largo</option>
                     <option value="Ernst Stavro Blofeld">Blofeld</option>
                     <option value="Mr Big">Mr Big</option>
                     <option value="Scaramanga">Scaramanga</option>
@@ -86,11 +88,15 @@
                   </select>
 
                 </div>
-              <p>4. Start your mission </p>
+              </div>
+              <div class="mid-screen">
+              <p>Start your mission </p>
+
             <input type="submit" value ="License to Kill"/>
             <button id="delete-all">Mission over</button>
+          </div>
         </form>
-    <h3>Database of 007 actors & their films</h3>
+    <h3 class = "h3-front-page">Database of 007 actors & their films</h3>
     <div> </div>
 
     <ul id = "actor-list"></ul>

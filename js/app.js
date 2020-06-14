@@ -35,7 +35,7 @@ const createActorListItem  = function(form){
   const actorListItem = document.createElement('li')
   actorListItem.classList.add('actor-list-item')
 
-  const name = document.createElement('h2');
+  const name = document.createElement('h3');
   name.textContent = form.name.value;
   actorListItem.appendChild(name)
 
@@ -43,7 +43,7 @@ const createActorListItem  = function(form){
   film.textContent = form.film.value;
   actorListItem.appendChild(film);
 
-  const villan = document.createElement('p');
+  const villan = document.createElement('h3');
   villan.textContent = form.villan.value;
   actorListItem.appendChild(villan);
 
