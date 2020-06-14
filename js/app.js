@@ -28,7 +28,10 @@ const actorListItem = createActorListItem(event.target)
 const actorList = document.querySelector('#actor-list');
 
 // add the new item to below the actor list passing the new item (ln 22)
-actorList.appendChild(actorListItem)
+actorList.appendChild(actorListItem);
+
+// event.target.reset();
+
 };
 // this function creates the new actor list item
 const createActorListItem  = function(form){
@@ -54,4 +57,4 @@ const createActorListItem  = function(form){
 const handleDeleteAllClick = function (event) {
   const actorList = document.querySelector('#actor-list');
   actorList.innerHTML = '';
-}
+};
