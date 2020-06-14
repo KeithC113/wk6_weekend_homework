@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded',() => {
   const newItemForm = document.querySelector('#new-item-form')
 // the variable listens out for the submit event, then calls function HNIFS
   newItemForm.addEventListener('submit', handleNewItemFormSubmit)
+
+  const deleteAllButton = document.querySelector('#delete-all')
+  deleteAllButton.addEventListener('click', handleDeleteAllClick)
 });
 
 const handleNewItemFormSubmit = function(event){
@@ -33,18 +36,22 @@ const createActorListItem  = function(form){
   actorListItem.classList.add('actor-list-item')
 
   const name = document.createElement('h2');
-  name.textContent = form.title.value;
+  name.textContent = form.name.value;
   actorListItem.appendChild(name)
 
   const film = document.createElement('h3');
   film.textContent = form.film.value;
   actorListItem.appendChild(film);
 
-  const year = document.createElement('p');
-  year.textContent = form.year.value;
-  actorListItem.appendChild(year);
+  const villan = document.createElement('p');
+  villan.textContent = form.villan.value;
+  actorListItem.appendChild(villan);
 
   // needs returned
   return actorListItem;
-
 };
+
+const handleDeleteAllClick = function (event) {
+  const actorList = document.querySelector('#actor-list');
+  actorList.innerHTML = '';
+}

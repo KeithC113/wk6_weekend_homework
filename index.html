@@ -2,45 +2,97 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Who's played 007 App</title>
+    <title> 007 Dossier </title>
     <script src = "js/app.js"> </script>
     <<link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <h1> James Bond Actors </h1>
+    <h1> James Bond Dossier </h1>
       <h2> App Instructions </h2>
-        <p> To create a database of those actors who have played Ian Fleming's James Bond, 007....type in...</p>
+        <p> To create a database of those actors who have played Ian Fleming's James Bond, 007....</p>
         <form id="new-item-form">
           <div id="form-wrapper">
             <div class="form-item">
-              <label for="name" class="primary">1. The actors' name > </label>
-              <input type="text" id="name" required/>
+              <label for="name" class="primary">1. Choose an actor> </label>
+              <select id="name">
+                <option value="" disabled selected></option>
+                <option value="Sean Connery">Sean Connery</option>
+                <option value="George Lazenby">George Lazenby</option>
+                <option value="Roger Moore">Roger Moore</option>
+                <option value="Timothy Dalton">Timothy Dalton</option>
+                <option value="Pierce Brosnan">Pierce Brosnan</option>
+                <option value="Daniel Craig">Daniel Craig</option>
+              </select>
             </div>
               <p></p>
               <p></p>
                 <div class="form-item">
-                  <label for="film" class="primary">2. Select the film they starred in > </label>
+                  <label for="film" class="primary">2. The film they starred in > </label>
                   <select id="film">
                     <option value="" disabled selected></option>
-                    <option value="film">Dr No.</option>
-                    <option value="film">Goldfinger</option>
-                    <option value="film">OHMSS</option>
-                    <option value="film">Die Another Day</option>
-                    <option value="film">Tomorrow Never Dies</option>
-                    <option value="film">Skyfall</option>
-                    <option value="film">Spectre</option>
+                    <option value="Dr No.">Dr No.</option>
+                    <option value="From Russia with Love">From Russia with Love</option>
+                    <option value="Goldfinger">Goldfinger</option>
+                    <option value="Thunderball">Thunderball</option>
+                    <option value="You Only Luve Twice">You Only Live Twice</option>
+                    <option value="OHMSS">OHMSS</option>
+                    <option value="Diamonds Are Forever">Diamonds Are Forever</option>
+                    <option value="Live and Let Die">Live and Let Die</option>
+                    <option value="The Man with the Golden Gun">The Man with the Golden Gun</option>
+                    <option value="The Spy Who Loved Me">The Spy WHo Loved Me</option>
+                    <option value="Moonraker">Moonraker</option>
+                    <option value="For Your Eyes Only">For Your Eyes Only</option>
+                    <option value="Octopussy">Octopussy</option>
+                    <option value="A View To a Kill">A View To a Kill</option>
+                    <option value="The Living Daylights">The Living Daylights</option>
+                    <option value="Licence to Kill">Licence to Kill</option>
+                    <option value="Goldeneye">Goldeneye</option>
+                    <option value="Tomorrow Never Dies">Tomorrow Never Dies</option>
+                    <option value="The World is Not Enough">The World is Not Enough</option>
+                    <option value="Die Another Day">Die Another Day</option>
+                    <option value="Casino Royale">Casino Royale</option>
+                    <option value="Quantum of Solace">Quantum of Solace</option>
+                    <option value="Skyfall">Skyfall</option>
+                    <option value="Spectre">Spectre</option>
                   </select>
                 </div>
               <p></p>
               <p></p>
                 <div class="form-item">
-                  <label for="year" class="primary">3. The year of release > </label>
-                  <input type="text" id="year" required/>
+                  <label for="villan" class="primary">3. The Villan > </label>
+                  <select id="villan">
+                    <option value="" disabled selected></option>
+                    <option value="Dr No.">Dr No.</option>
+                    <option value="Rosa Klebb">Rosa Klebb</option>
+                    <option value="Auric Goldfinger">Auric Goldfinger</option>
+                    <option value="Emilio Largo">EMilio Largo</option>
+                    <option value="Ernst Stavro Blofeld">Blofeld</option>
+                    <option value="Mr Big">Mr Big</option>
+                    <option value="Scaramanga">Scaramanga</option>
+                    <option value="Hugo Drax">Hugo Drax</option>
+                    <option value="Aristotle Kristatos">Aristotle Kristatos</option>
+                    <option value="Kamal Khan">Kamal Khan</option>
+                    <option value="Max Zorin">Max Zorin</option>
+                    <option value="General Koskov">General Koskov</option>
+                    <option value="Franz Sanchez">Franz Sanchez</option>
+                    <option value="Janus">Janus</option>
+                    <option value="Elliot Carver">Elliot Carver</option>
+                    <option value="Electra King">Electra King</option>
+                    <option value="Gustav Graves">Gustav Graves</option>
+                    <option value="Le Chiffre">Le Chiffre</option>
+                    <option value="Dominic Greene">Domininc Greene</option>
+                    <option value="Raoul Silva">Raoul Silva</option>
+                    <option value="No Time to Die">No Time to Die</option>
+                  </select>
+
                 </div>
-              <p>4. Click SUBMIT </p>
-            <input type = "submit" value "Save"/>
+              <p>4. Start your mission </p>
+            <input type="submit" value ="License to Kill"/>
+            <button id="delete-all">Mission over</button>
         </form>
-    <h3>Database of 007 actors</h3>
+    <h3>Database of 007 actors & their films</h3>
+    <div> </div>
+
     <ul id = "actor-list"></ul>
   </body>
 </html>

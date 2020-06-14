@@ -1,6 +1,13 @@
 body {
   font-family: Courier;
+  background: jb_background.jpg;
 }
+
+/* #form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+} */
 
 button, input[type="submit"] {
   margin-top: 1rem;
